@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!--
 /**
-* Dc_SampleModule
+* Barbanet_SampleModule
 *
 * NOTICE OF LICENSE
 *
@@ -9,14 +9,14 @@
 * that is available through the world-wide-web at this URL:
 * http://opensource.org/licenses/osl-3.0.php
 *
-* @category   Dc
-* @package    Dc_SampleModule
-* @copyright  Copyright (c) 2015 Damián Culotta. (http://www.damianculotta.com.ar/)
+* @category   Barbanet
+* @package    Barbanet_SampleModule
+* @copyright  Copyright (c) 2015-2016 Damián Culotta. (http://www.damianculotta.com.ar/)
 * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
 */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
-    <module name="Dc_SampleModule" setup_version="2.0.0">
+    <module name="Barbanet_SampleModule" setup_version="2.0.1">
         <sequence>
             <module name="Magento_Store"/>
         </sequence>
