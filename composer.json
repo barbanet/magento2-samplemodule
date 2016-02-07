@@ -2,7 +2,7 @@
     "name": "barbanet/magento2-samplemodule",
     "description": "Magento2 sample module",
     "type": "magento2-module",
-    "version": "2.1.0",
+    "version": "2.2.0",
     "authors": [
         {
             "name": "Damian Culotta",

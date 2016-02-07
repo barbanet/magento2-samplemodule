@@ -19,4 +19,9 @@
     <head>
         <title>Barbanet Sample Module Controller title</title>
     </head>
+    <body>
+        <referenceContainer name="content">
+            <block class="Barbanet\SampleModule\Block\Basic" template="Barbanet_SampleModule::basic.phtml" />
+        </referenceContainer>
+    </body>
 </page>
