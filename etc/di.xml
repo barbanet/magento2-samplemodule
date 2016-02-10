@@ -15,13 +15,6 @@
 * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
 */
 -->
-<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
-    <head>
-        <title>Barbanet Sample Module Default title</title>
-    </head>
-    <referenceBlock name="copyright">
-        <action method="setTemplate">
-            <argument name="template" xsi:type="string">Barbanet_SampleModule::html/copyright.phtml</argument>
-        </action>
-    </referenceBlock>
-</page>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento\Theme\Block\Html\Footer" type="Barbanet\SampleModule\Block\Html\Footer" />
+</config>
