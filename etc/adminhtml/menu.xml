@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Barbanet_SampleModule
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Open Software License (OSL 3.0)
+* that is available through the world-wide-web at this URL:
+* http://opensource.org/licenses/osl-3.0.php
+*
+* @category   Barbanet
+* @package    Barbanet_SampleModule
+* @copyright  Copyright (c) 2015-2016 Damián Culotta. (http://www.damianculotta.com.ar/)
+* @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Barbanet_SampleModule::samplemodule" title="Sample Module" module="Barbanet_SampleModule" sortOrder="50" resource="Barbanet_SampleModule::samplemodule" />
+        <add id="Barbanet_SampleModule::samplemodule_group" title="Sample Module Group" module="Barbanet_SampleModule" sortOrder="10" parent="Barbanet_SampleModule::samplemodule" resource="Barbanet_SampleModule::samplemodule_group" />
+        <add id="Barbanet_SampleModule::samplemodule_first" title="Sample Module First" module="Barbanet_SampleModule" sortOrder="10" parent="Barbanet_SampleModule::samplemodule_group" action="samplemodule/first" resource="Barbanet_SampleModule::samplemodule_first" />
+    </menu>
+</config>
