@@ -2,7 +2,7 @@
     "name": "barbanet/magento2-samplemodule",
     "description": "Magento2 sample module",
     "type": "magento2-module",
-    "version": "2.7.0",
+    "version": "2.7.1",
     "authors": [
         {
             "name": "Damian Culotta",
@@ -13,7 +13,7 @@
     "minimum-stability": "dev",
     "require": {
         "php": "~5.5.0|~5.6.0|~7.0.0",
-        "magento/framework": "100.0.*"
+        "magento/framework": "100.*"
     },
     "license": [
         "OSL-3.0",
