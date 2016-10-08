@@ -23,7 +23,7 @@ use Magento\Framework\Setup\ModuleContextInterface;
 /**
  * @codeCoverageIgnore
  */
-class UninstallSchema implements UninstallInterface
+class Uninstall implements UninstallInterface
 {
 
     public function uninstall(SchemaSetupInterface $setup, ModuleContextInterface $context)
