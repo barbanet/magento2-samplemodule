@@ -17,4 +17,11 @@
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <preference for="Magento\Theme\Block\Html\Footer" type="Barbanet\SampleModule\Block\Html\Footer" />
+    <type name="Magento\Framework\Console\CommandList">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="sampleModuleHello" xsi:type="object">Barbanet\SampleModule\Console\Hello</item>
+            </argument>
+        </arguments>
+    </type>
 </config>
