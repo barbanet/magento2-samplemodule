@@ -13,12 +13,20 @@
  * @copyright  Copyright (c) 2015-2017 Damián Culotta. (http://www.damianculotta.com.ar/)
  * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
-?>
 
-<h1><?php echo __('My first basic block with custom template.') ?></h1>
-<p><?php echo __('This is a dummy block.') ?></p>
-<p><?php echo $block->getDummyString(); ?></p>
-<ul>
-    <li><?php echo $this->helper('Barbanet\SampleModule\Helper\Data')->convertText('First item'); ?></li>
-    <li>Second item</li>
-</ul>
+namespace Barbanet\SampleModule\Helper;
+
+use Magento\Framework\App\Helper\AbstractHelper;
+
+/**
+ * SampleModule base helper
+ */
+class Data extends AbstractHelper
+{
+
+    public function convertText($text)
+    {
+        return strtoupper($text);
+    }
+
+}
