@@ -24,7 +24,7 @@
             <label>Sample Module</label>
             <tab>samplemodule</tab>
             <resource>Barbanet_SampleModule::samplemodule</resource>
-            <group id="contact" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+            <group id="sample" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>Sample Module</label>
                 <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
                     <label>Enable Module</label>

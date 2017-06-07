@@ -24,6 +24,28 @@ use Magento\Framework\App\Helper\AbstractHelper;
 class Data extends AbstractHelper
 {
 
+    /**
+     * @param $path
+     * @param string $store
+     * @return mixed
+     */
+    protected function getConfig($path, $store = \Magento\Store\Model\ScopeInterface::SCOPE_STORE)
+    {
+        return $this->scopeConfig->getValue(
+            'samplemodule/' . $path,
+            $store
+        );
+    }
+
+    public function isEnabled()
+    {
+        return $this->getConfig('sample/enabled');
+    }
+
+    /**
+     * @param $text
+     * @return string
+     */
     public function convertText($text)
     {
         return strtoupper($text);

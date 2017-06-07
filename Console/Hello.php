@@ -27,6 +27,23 @@ use Symfony\Component\Console\Output\OutputInterface;
 class Hello extends Command
 {
 
+    /**
+     * @var
+     */
+    private $helper;
+
+    /**
+     * @param \Barbanet\SampleModule\Helper\Data $helper
+     * @param null $name
+     */
+    public function __construct(
+        \Barbanet\SampleModule\Helper\Data $helper,
+        $name = null
+    ) {
+        $this->helper = $helper;
+        parent::__construct($name);
+    }
+
     protected function configure()
     {
         $this->setName('samplemodule:hello');
@@ -39,6 +56,10 @@ class Hello extends Command
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
+        if (!$this->helper->isEnabled()) {
+            $output->writeln("Barbanet_SampleModule is disabled. Check your configuration.");
+            return false;
+        }
         $output->writeln("My Sample Module message: Hello World!");
     }
 
