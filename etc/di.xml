@@ -21,6 +21,7 @@
         <arguments>
             <argument name="commands" xsi:type="array">
                 <item name="sampleModuleHello" xsi:type="object">Barbanet\SampleModule\Console\Hello</item>
+                <item name="sampleModuleLogger" xsi:type="object">Barbanet\SampleModule\Console\Logger</item>
             </argument>
         </arguments>
     </type>
