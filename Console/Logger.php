@@ -33,14 +33,22 @@ class Logger extends Command
     private $logger;
 
     /**
+     * @var
+     */
+    private $logger_custom;
+
+    /**
      * @param \Psr\Log\LoggerInterface $logger
+     * @param \Barbanet\SampleModule\Logger\Sample $logger_custom
      * @param null $name
      */
     public function __construct(
         \Psr\Log\LoggerInterface $logger,
+        \Barbanet\SampleModule\Logger\Sample $logger_custom,
         $name = null
     ) {
         $this->logger = $logger;
+        $this->logger_custom = $logger_custom;
         parent::__construct($name);
     }
 
@@ -66,6 +74,8 @@ class Logger extends Command
         $this->logger->warning('Mensaje Warning');
 
         $this->logger->log(\Psr\Log\LogLevel::INFO, 'Mensaje Log');
+
+        $this->logger_custom->info('Estoy probando mi logger custom');
 
     }
 
