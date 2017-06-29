@@ -36,7 +36,7 @@
     <!-- Logger custom -->
     <type name="Barbanet\SampleModule\Logger\Sample">
         <arguments>
-            <argument name="name" xsi:type="string">BarbanetSammpleLogger</argument>
+            <argument name="name" xsi:type="string">BarbanetSampleLogger</argument>
             <argument name="handlers" xsi:type="array">
                 <item name="system" xsi:type="object">Barbanet\SampleModule\Logger\Handler\Sample</item>
             </argument>

@@ -18,6 +18,7 @@ namespace Barbanet\SampleModule\Controller\Index;
 
 class Index extends \Barbanet\SampleModule\Controller\Index
 {
+
     /**
      * Show Sample Module main page
      *
@@ -27,5 +28,10 @@ class Index extends \Barbanet\SampleModule\Controller\Index
     {
         $this->_view->loadLayout();
         $this->_view->renderLayout();
+
+        $sample = 'Mensaje que voy a llevarle al Observer';
+
+        $this->_eventManager->dispatch('barbanet_samplemodule_controller_event_after',['sample' => $sample]);
     }
+
 }

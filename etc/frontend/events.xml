@@ -19,4 +19,7 @@
     <event name="catalog_controller_product_view">
         <observer name="BarbanetProductData" instance="Barbanet\SampleModule\Observer\Product\Data" />
     </event>
+    <event name="barbanet_samplemodule_controller_event_after">
+        <observer name="BarbanetControllerSample" instance="Barbanet\SampleModule\Observer\Controller\Sample" />
+    </event>
 </config>
