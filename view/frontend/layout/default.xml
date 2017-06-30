@@ -19,9 +19,11 @@
     <head>
         <title>Barbanet Sample Module Default title</title>
     </head>
-    <referenceBlock name="copyright">
-        <action method="setTemplate">
-            <argument name="template" xsi:type="string">Barbanet_SampleModule::html/copyright.phtml</argument>
-        </action>
-    </referenceBlock>
+    <body>
+        <referenceBlock name="copyright">
+            <action method="setTemplate">
+                <argument name="template" xsi:type="string">Barbanet_SampleModule::html/copyright.phtml</argument>
+            </action>
+        </referenceBlock>
+    </body>
 </page>
