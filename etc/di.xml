@@ -42,4 +42,6 @@
             </argument>
         </arguments>
     </type>
+    <!-- API -->
+    <preference for="Barbanet\SampleModule\Api\PingInterface" type="Barbanet\SampleModule\Model\Ping" />
 </config>
