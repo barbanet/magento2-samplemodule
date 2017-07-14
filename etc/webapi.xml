@@ -19,7 +19,7 @@
     <route url="/V1/samplemodule/ping/" method="GET">
         <service class="Barbanet\SampleModule\Api\PingInterface" method="pong" />
         <resources>
-            <resource ref="anonymous" />
+            <resource ref="Magento_Backend::admin" />
         </resources>
     </route>
 </routes>
