@@ -2,17 +2,17 @@
     "name": "barbanet/magento2-samplemodule",
     "description": "Magento2 sample module",
     "type": "magento2-module",
-    "version": "2.23.0",
+    "version": "2.24.0",
     "authors": [
         {
             "name": "Damian Culotta",
             "email": "code@damianculotta.com.ar",
-            "homepage": "http://www.damianculotta.com.ar"
+            "homepage": "https://www.damianculotta.com.ar"
         }
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": "~5.5.0|~5.6.0|~7.0.0",
+        "php": "~5.6.0|~7.0.0|~7.1.0",
         "magento/framework": "100.*"
     },
     "license": [
